@@ -243,7 +243,6 @@ header.masthead {
   color: white;
   background-image: url("../images/about/header.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -251,6 +250,20 @@ header.masthead {
   background-size: cover;
   height: 100vh
 }
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  header.masthead {
+    background: url("../images/about/header_mobile.jpg") no-repeat center center;
+  }
+}
+
+@media (min-width: 768px) {
+  header.masthead {
+    background-attachment: fixed;
+  }
+}
+
+
 
 header.masthead .overlay {
   position: absolute;
@@ -490,12 +503,24 @@ header.masthead .intro-text {
 
 section#contact {
   background-color: #212529;
-  background-image: url("../images/about/map.png");
+  background-image: url("../images/about/map.jpg");
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position: center;
   padding-bottom: 0;
 }
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  section#contact {
+    background: url("../images/about/map_mobile.jpg") no-repeat center center;
+  }
+}
+
+@media (min-width: 768px) {
+  section#contact {
+    background-attachment: fixed;
+  }
+}
+
 
 section#contact .section-heading {
   color: #000;
@@ -563,6 +588,14 @@ section#contact :-ms-input-placeholder {
     font-size: 18px;
     padding-bottom: 10px;
 }
+
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+  .footer-contact-info ul.text {
+      font-size: 14px;
+      padding-bottom: 10px;
+  }
+}
+
 
 .footer-contact-info ul.icon {
     text-align: center;
