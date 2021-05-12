@@ -103,6 +103,13 @@ img::-moz-selection {
   background: transparent;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 #mainNav {
   background-color: #162029;
 }
